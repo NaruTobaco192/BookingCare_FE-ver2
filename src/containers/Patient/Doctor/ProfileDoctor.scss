@@ -1,0 +1,62 @@
+.profile-doctor-container{
+    .intro-doctor{
+        display: flex;
+        .content-left{
+            background-size: cover;
+            background-repeat:no-repeat ;
+            background-position: center;
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .content-right{
+            // width: calc(100%-150px) !important;
+            max-width: 430px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 10px;
+            .up{
+                font-weight: 600;
+            }
+            .down{
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+//Tablet
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .profile-doctor-container{
+        .intro-doctor{
+            .content-left{
+                min-width: 100px;
+            }
+        }
+        .view-detail-doctor{
+            margin-top: 14px;
+            margin-left: 3px;
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width:46.1875em) {
+    .profile-doctor-container{
+        .intro-doctor{
+            .content-left{
+                min-width: 90px;
+                width: 90px !important;
+                height: 90px !important;
+                margin-top: 5px;
+            }
+        }
+        .view-detail-doctor{
+            margin-top: 14px;
+            margin-left: 5px;
+        }
+    }
+}

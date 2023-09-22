@@ -1,0 +1,201 @@
+.home-footer{
+    width: 100%;
+    height: 450px;
+    background-color: #efefef;
+    position: relative;
+    .info {
+        .left{
+            margin-top: 27px;
+            .logo{
+                width: 200px;
+                height: 44px;
+                margin-left: -330px;
+            }
+            .company{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 46px;
+                margin-top: 18px;
+                h2{
+                font-size: 16px;
+                font-weight: bold;
+                }
+                p{
+                    margin: 5px 0;
+                    text-align: left;
+                }
+                .up{
+                max-width: 495px;
+                i{
+                    margin-right: 4px;
+                }
+                }
+                .down{
+                i{
+                    margin-right: 4px;
+                }
+                }
+            }
+        }
+        .mid{
+            position: relative;
+            left: -72px;
+            color: #45c3d2;
+            top: 42px;
+            text-align: left;
+            p{
+                cursor: pointer;
+            }
+        }
+        .right{
+            position: relative;
+            top: 35px;
+            left: -77px;
+            text-align: left;
+            .up{
+                font-weight:bold;
+            }
+            .down{
+                position: relative;
+                top: -14px;
+            }
+        }
+    }
+    .social{
+        width: 100%;
+        height: 68px;
+        background-color: #64b9e5;
+        position: absolute;
+        bottom: 0;
+        float: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i{
+            font-size: 24px;
+            margin: 6px;
+        }
+        .fb,.gg,.ytb {
+            color: white;
+            height: 38px;
+            width: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 12px;
+            cursor: pointer;
+        }
+        .fb{
+            background-color: #307aaf;
+        }
+        .gg{
+            background-color: #cb2626;
+        }
+        .ytb{
+            background-color: #cb2626;
+        }
+        .copyright{
+            position: relative;
+            left: -235px;
+        }
+    }
+}
+
+/* Tablet */
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .home-footer{
+        height: 503px;
+        overflow-x: hidden;
+        .info{
+            .left{
+                .logo{
+                    margin-left: -136px;
+                }
+                .company{
+                    margin-left: 25px;
+                    max-width: 310px;
+                    h2{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .social{
+            overflow: hidden;
+            justify-content: flex-start;
+            .copyright{
+                display: none;
+            }
+            .fb{
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+
+/* Mobile */
+@media (max-width:46.1875em) {
+.home-footer{
+    height: 800px;
+    overflow-x: hidden;
+    .info{
+        overflow: hidden;
+        .left{
+            margin-left: 186px;
+            display: flex;
+            margin-top: 30px;
+            flex-direction: column;
+            .logo{
+                width: 178px;
+                height: 36px;
+                margin-left: -173px;
+            }
+            .company{
+                margin-left: -204px;
+                h2{
+                    margin: 14px 0;
+                    margin-left: 36px;
+                    text-align: left;
+                }
+                .up{
+                    position: unset;
+                    max-width: unset;
+                    margin-left: 36px;
+                    text-align: left;
+                }
+                .down{
+                    position: unset;
+                    margin-left: 35px;
+                    text-align: left;
+                }
+            }
+        }
+        .mid{
+            position: unset;
+            margin-top: 23px;
+            margin-left: 21px;
+            min-width: 317px;
+            color: #45c3d2;
+            text-align: left;
+        }
+        .right{
+            position: unset;
+            margin-left: 21px;
+            min-width: 374px;
+        }
+    }
+    .social{
+        overflow: hidden;
+        justify-content: flex-start;
+        .copyright{
+            display: none;
+        }
+        .fb{
+            margin-left: 12px;
+        }
+    }
+}
+}

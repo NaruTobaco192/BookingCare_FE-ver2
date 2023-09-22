@@ -1,0 +1,82 @@
+.doctor-extra-info-container{
+    padding-left: 15px;
+    .content-up{
+        margin-bottom: 10px;
+        .text-address{
+            text-transform: uppercase;
+            color: #333;
+        }
+        .name-clinic{
+            padding: 5px 0;
+            font-weight: 600;
+            color: #333;  
+        }
+        .detail-address{
+            font-weight: 600;
+            color: #333
+        }
+    }
+    .content-down{
+        .short-info{
+            .detail{
+                cursor: pointer;
+                color: rgb(38,160,231);
+            }
+            .currency{
+                margin: 0 5px;
+            }
+        }
+        .title-price{
+            margin-bottom: 10px;
+        }
+        .detail-info{
+            border: 1px solid white;
+            padding: 5px;
+            background-color: #f8f8f8;
+            .price{
+                padding-bottom: 5px;
+                .right{
+                    float: right;
+                }
+            }
+            .note{              
+            }
+        }
+        .payment{
+            border: 1px solid white;
+            padding: 5px;
+            background-color: #eee;
+        }
+        .hide-price{
+            margin-top: 10px;
+            span{
+                cursor: pointer;
+                color: rgb(38,160,231);
+            }
+        }
+    }
+}
+
+
+//Tablet
+@media (min-width:46.25em) and (max-width:63.9375em){
+    .doctor-extra-info-container{
+        text-align: left;
+        margin-left: -13px;
+        .content-down{
+            margin-left: -7px;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width:46.1875em) {
+    .doctor-extra-info-container{
+        width: 343px;
+        text-align: left;
+        margin-left: -13px;
+        .content-down{
+            margin-left: -7px;
+        }
+    }
+}
